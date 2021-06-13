@@ -1,0 +1,39 @@
+.uix-md {
+  .icon-back,
+  .icon-forward,
+  .icon-next,
+  .icon-prev {
+    width: 24px;
+    // height: 24px;
+    &:before {
+      line-height: 1.2;
+      font-size: 24px;
+    }
+  }
+  .item-media .icon {
+    color: #737373;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  .icon-back {
+    &:before {
+      content: "\f27d";
+    }
+  }
+  .icon-forward {
+    &:before {
+      content: "\f287";
+    }
+  }
+  .icon-next {
+    &:before {
+      content: "\f287";
+    }
+  }
+  .icon-prev {
+    &:before {
+      content: "\f27d";
+    }
+  }
+}

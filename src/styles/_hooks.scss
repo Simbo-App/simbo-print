@@ -1,0 +1,37 @@
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --uix-theme-color: var(--app-theme-color);
+  --uix-bars-bg-color: var(--uix-theme-color);
+  --uix-bars-text-color: #fff;
+  --uix-bars-link-color: #fff;
+  --uix-navbar-subtitle-text-color: rgba(255, 255, 255, 0.85);
+  --uix-bars-border-color: transparent;
+  --uix-tabbar-link-active-color: #fff;
+  --uix-tabbar-link-inactive-color: rgba(255, 255, 255, 0.54);
+  --uix-searchbar-bg-color: var(--uix-bars-bg-color);
+  --uix-searchbar-input-bg-color: #fff;
+  --uix-searchbar-input-text-color: #000;
+  --uix-sheet-border-color: transparent;
+  --uix-tabbar-link-active-border-color: #fff;
+}
+
+.appbar,
+.navbar,
+.toolbar,
+.subnavbar,
+.calendar-header,
+.calendar-footer {
+  --uix-touch-ripple-color: var(--uix-touch-ripple-white);
+  --uix-link-highlight-color: var(--uix-link-highlight-white);
+  --uix-button-text-color: #fff;
+  --uix-button-pressed-bg-color: rgba(255, 255, 255, 0.1);
+}
+
+uix-page-content {
+  background-color: var(--app-theme-secondary-color);
+
+  &[bg-white] {
+    background-color: white;
+  }
+}

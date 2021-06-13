@@ -1,0 +1,25 @@
+@mixin linear-gradient($color1, $color2) {
+  background: $color1;
+  background: linear-gradient($color1, $color2);
+}
+
+@mixin gradient-horizontal($start-color: #555,
+  $end-color: #333,
+  $start-percent: 0%,
+  $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+@mixin gradient-vertical($start-color: #555,
+  $end-color: #333,
+  $start-percent: 0%,
+  $end-percent: 100%) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) {
+  background-repeat: repeat-x;
+  background-image: linear-gradient($deg, $start-color, $end-color);
+}

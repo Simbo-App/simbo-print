@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simbo</title>
+    <meta charset="utf-8" />
+
+    <base href="/" />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2A3F54" />
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+  </head>
+
+  <body>
+    <app-root></app-root>
+
+    <script>
+      window.addEventListener = function() {
+        EventTarget.prototype.addEventListener.apply(this, arguments);
+      };
+      window.removeEventListener = function() {
+        EventTarget.prototype.removeEventListener.apply(this, arguments);
+      };
+      document.addEventListener = function() {
+        EventTarget.prototype.addEventListener.apply(this, arguments);
+      };
+      document.removeEventListener = function() {
+        EventTarget.prototype.removeEventListener.apply(this, arguments);
+      };
+    </script>
+    <script src="cordova.js"></script>
+  </body>
+</html>

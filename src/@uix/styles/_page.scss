@@ -1,0 +1,64 @@
+:root {
+  --uix-ios-home-indicator-height: 34px;
+  --uix-page-height: 100%;
+  --uix-page-contain: layout size style;
+}
+
+.uix-ios {
+  --uix-page-height: calc(100% - 34px);
+}
+
+.uix-ios:not(.device-iphone-x) {
+  --uix-page-height: 100%;
+}
+
+.uix-md {
+  --uix-page-contain: strict;
+}
+
+uix-page {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--uix-page-height);
+  contain: var(--uix-page-contain);
+  background: var(--uix-page-bg-color);
+  z-index: $z-index-view;
+  transform: translate3d(0, 0, 0);
+}
+
+
+uix-page-content {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  contain: layout size style;
+  will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+
+  &.no-navbar {
+    padding-top: 0 !important;
+  }
+}
+
+.uix-ios {
+  uix-page::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 16px;
+    content: "";
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0.01) 50%,
+        rgba(0, 0, 0, 0.2) 100%);
+  }
+}

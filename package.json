@@ -1,0 +1,84 @@
+{
+  "private": true,
+  "name": "ci.codivoire.simbo",
+  "version": "1.1.0",
+  "scripts": {
+    "start": "ng serve -o",
+    "build": "ng build --prod",
+    "build:android-apk": "cordova build android --prod --release",
+    "build:android-bundle": "cordova build android --prod --release -- --packageType=bundle",
+    "launch:android": "cordova run android --device --prod --release"
+  },
+  "ntl": {
+    "descriptions": {
+      "start": "Run for development",
+      "build": "Build for production",
+      "build:android-apk": "Build Android APK",
+      "build:android-bundle": "Build Android bundle",
+      "launch:android": "Launch on Android device"
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "~11.2.14",
+    "@angular/common": "~11.2.14",
+    "@angular/compiler": "~11.2.14",
+    "@angular/core": "~11.2.14",
+    "@angular/forms": "~11.2.14",
+    "@angular/platform-browser": "~11.2.14",
+    "@angular/platform-browser-dynamic": "~11.2.14",
+    "@angular/router": "~11.2.14",
+    "@ionic-native/core": "^5.33.0",
+    "@ionic-native/device": "^5.33.0",
+    "@ionic-native/dialogs": "^5.33.0",
+    "@ionic-native/network": "^5.33.0",
+    "@ionic-native/screen-orientation": "^5.33.0",
+    "@ionic-native/splash-screen": "^5.33.0",
+    "@ionic-native/status-bar": "^5.33.0",
+    "@ionic/angular": "^5.5.2",
+    "rxjs": "6.6.3",
+    "sweetalert2": "^10.13.0",
+    "tslib": "2.1.0",
+    "zone.js": "0.11.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.901.15",
+    "@angular/cli": "11.2.13",
+    "@angular/compiler-cli": "11.2.14",
+    "@codivoire/cordova-plugin-bluetoothprinter": "github:codivoire/cordova-plugin-bluetoothprinter",
+    "@types/node": "^14.14.22",
+    "codelyzer": "6.0.2",
+    "cordova-android": "^9.1.0",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.1.2",
+    "cordova-plugin-screen-orientation": "^3.0.2",
+    "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-vibration": "^3.1.1",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "es6-promise-plugin": "^4.2.2",
+    "ts-node": "9.1.1",
+    "tslint": "6.1.3",
+    "typescript": "~4.1.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-bluetoothprinter": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

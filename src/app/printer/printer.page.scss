@@ -1,0 +1,21 @@
+uix-block[strong] {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.test--list {
+  margin: 0;
+  margin-top: 25px;
+
+  ul {
+    &::after {
+      display: none;
+    }
+
+    li {
+      padding: 0;
+      padding-top: 13px;
+      height: 40px;
+    }
+  }
+}

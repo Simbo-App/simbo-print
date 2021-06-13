@@ -1,0 +1,390 @@
+@font-face {
+  font-family: 'Simbo-Icons';
+  src: url('../assets/fonts/Simbo-Icons.woff?pz36ce') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ti-"],
+[class*=" ti-"] {
+  display: inline-block;
+  font-family: 'Simbo-Icons' !important;
+  speak: none;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Better Font Rendering =========== */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.ti-abacus:before {
+  content: "\e900";
+}
+
+.ti-account:before {
+  content: "\e901";
+}
+
+.ti-accounting:before {
+  content: "\e902";
+}
+
+.ti-accounting1:before {
+  content: "\e903";
+}
+
+.ti-administration:before {
+  content: "\e904";
+}
+
+.ti-agreement:before {
+  content: "\e905";
+}
+
+.ti-analytics:before {
+  content: "\e906";
+}
+
+.ti-announcement:before {
+  content: "\e907";
+}
+
+.ti-architecture:before {
+  content: "\e908";
+}
+
+.ti-architecture1:before {
+  content: "\e909";
+}
+
+.ti-archive:before {
+  content: "\e90a";
+}
+
+.ti-archive1:before {
+  content: "\e90b";
+}
+
+.ti-atm:before {
+  content: "\e90c";
+}
+
+.ti-atm1:before {
+  content: "\e90d";
+}
+
+.ti-atm2:before {
+  content: "\e90e";
+}
+
+.ti-auction:before {
+  content: "\e90f";
+}
+
+.ti-automobile:before {
+  content: "\e910";
+}
+
+.ti-balance:before {
+  content: "\e911";
+}
+
+.ti-bank:before {
+  content: "\e912";
+}
+
+.ti-banking:before {
+  content: "\e913";
+}
+
+.ti-banking1:before {
+  content: "\e914";
+}
+
+.ti-bill:before {
+  content: "\e915";
+}
+
+.ti-bill1:before {
+  content: "\e916";
+}
+
+.ti-billfold:before {
+  content: "\e917";
+}
+
+.ti-bitcoin:before {
+  content: "\e918";
+}
+
+.ti-budget:before {
+  content: "\e919";
+}
+
+.ti-buildings:before {
+  content: "\e91a";
+}
+
+.ti-business-bag:before {
+  content: "\e91b";
+}
+
+.ti-business:before {
+  content: "\e91c";
+}
+
+.ti-business1:before {
+  content: "\e91d";
+}
+
+.ti-business2:before {
+  content: "\e91e";
+}
+
+.ti-business3:before {
+  content: "\e91f";
+}
+
+.ti-business4:before {
+  content: "\e920";
+}
+
+.ti-business5:before {
+  content: "\e921";
+}
+
+.ti-business6:before {
+  content: "\e922";
+}
+
+.ti-business7:before {
+  content: "\e923";
+}
+
+.ti-buy:before {
+  content: "\e924";
+}
+
+.ti-calculator:before {
+  content: "\e925";
+}
+
+.ti-calculator1:before {
+  content: "\e926";
+}
+
+.ti-check:before {
+  content: "\e927";
+}
+
+.ti-coin-stack:before {
+  content: "\e928";
+}
+
+.ti-coin:before {
+  content: "\e929";
+}
+
+.ti-coin1:before {
+  content: "\e92a";
+}
+
+.ti-credit-card-destruction:before {
+  content: "\e92b";
+}
+
+.ti-credit-card:before {
+  content: "\e92c";
+}
+
+.ti-credit-card1:before {
+  content: "\e92d";
+}
+
+.ti-credit-card2:before {
+  content: "\e92e";
+}
+
+.ti-diamond:before {
+  content: "\e92f";
+}
+
+.ti-exchange:before {
+  content: "\e930";
+}
+
+.ti-filter:before {
+  content: "\e931";
+}
+
+.ti-folder:before {
+  content: "\e932";
+}
+
+.ti-gold-ingots:before {
+  content: "\e933";
+}
+
+.ti-growth:before {
+  content: "\e934";
+}
+
+.ti-investment:before {
+  content: "\e935";
+}
+
+.ti-invoice:before {
+  content: "\e936";
+}
+
+.ti-light-bulb:before {
+  content: "\e937";
+}
+
+.ti-money-bag:before {
+  content: "\e938";
+}
+
+.ti-money-dollar:before {
+  content: "\e939";
+}
+
+.ti-money-euro:before {
+  content: "\e93a";
+}
+
+.ti-money-livres:before {
+  content: "\e93b";
+}
+
+.ti-money-yen:before {
+  content: "\e93c";
+}
+
+.ti-money:before {
+  content: "\e93d";
+}
+
+.ti-money1:before {
+  content: "\e93e";
+}
+
+.ti-money2:before {
+  content: "\e93f";
+}
+
+.ti-money3:before {
+  content: "\e940";
+}
+
+.ti-online-banking:before {
+  content: "\e941";
+}
+
+.ti-padlock:before {
+  content: "\e942";
+}
+
+.ti-piggy-bank:before {
+  content: "\e943";
+}
+
+.ti-placeholder:before {
+  content: "\e944";
+}
+
+.ti-point-of-service:before {
+  content: "\e945";
+}
+
+.ti-portfolio:before {
+  content: "\e946";
+}
+
+.ti-profits:before {
+  content: "\e947";
+}
+
+.ti-profits1:before {
+  content: "\e948";
+}
+
+.ti-pyramid:before {
+  content: "\e949";
+}
+
+.ti-real-estate:before {
+  content: "\e94a";
+}
+
+.ti-receipt:before {
+  content: "\e94b";
+}
+
+.ti-safebox:before {
+  content: "\e94c";
+}
+
+.ti-scales:before {
+  content: "\e94d";
+}
+
+.ti-shield:before {
+  content: "\e94e";
+}
+
+.ti-shopping-bag:before {
+  content: "\e94f";
+}
+
+.ti-shopping-cart:before {
+  content: "\e950";
+}
+
+.ti-smartphone:before {
+  content: "\e951";
+}
+
+.ti-stopwatch:before {
+  content: "\e952";
+}
+
+.ti-suitcase:before {
+  content: "\e953";
+}
+
+.ti-tag:before {
+  content: "\e954";
+}
+
+.ti-tax:before {
+  content: "\e955";
+}
+
+.ti-time-money:before {
+  content: "\e956";
+}
+
+.ti-wallet:before {
+  content: "\e957";
+}
+
+.ti-wallet1:before {
+  content: "\e958";
+}
+
+.ti-woman:before {
+  content: "\e959";
+}

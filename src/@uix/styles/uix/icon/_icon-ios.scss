@@ -1,0 +1,38 @@
+.uix-ios {
+  .icon-back,
+  .icon-prev,
+  .icon-forward,
+  .icon-next {
+    width: 12px;
+    height: 20px;
+    line-height: 20px;
+    &:before {
+      line-height: inherit;
+    }
+  }
+  .icon-prev,
+  .icon-next {
+    &:before {
+      font-size: 16px;
+    }
+  }
+  .item-media .icon {
+    color: #808080;
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .icon-back,
+  .icon-prev {
+    &:before {
+      content: "\f3cf";
+    }
+  }
+  .icon-forward,
+  .icon-next {
+    &:before {
+      content: "\f3d1";
+    }
+  }
+}

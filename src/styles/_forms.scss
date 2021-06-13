@@ -1,0 +1,219 @@
+.app-input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.app-input {
+  display: block;
+  margin: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  border: 2px solid #e0e2e6;
+  color: var(--app-theme-color);
+  background-color: white;
+  background-clip: padding-box;
+  border-radius: 30px;
+  box-sizing: border-box;
+  outline: none;
+
+  &~label,
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+    color: #a5a8ad;
+  }
+
+  &~label {
+    line-height: 1;
+    position: absolute;
+    pointer-events: none;
+    left: 21px;
+    top: 14px;
+    transition: 0.2s ease all;
+  }
+
+  &:valid,
+  &:focus {
+    outline: none;
+  }
+
+  &.ng-valid~label,
+  &.ng-invalid.ng-dirty:not(form)~label,
+  &.ng-invalid:not(form).form-submitted~label,
+  &:focus~label {
+    padding: 0 3px;
+    top: -6px;
+    left: 23px;
+    font-size: 13px;
+    color: #757575;
+    background-color: white;
+    opacity: 1;
+  }
+
+  &.ng-invalid.ng-dirty:not(form)~label,
+  &.ng-invalid:not(form).form-submitted~label {
+    color: var(--app-red-color);
+  }
+
+  &.ng-valid.ng-dirty:not(form)~label,
+  &.ng-valid:not(form).form-submitted~label {
+    color: var(--app-green-color);
+  }
+
+  &.app-input-sm {
+    padding: 10px 5px;
+    text-align: center;
+    text-align-last: center;
+
+    &~label {
+      left: 15px;
+    }
+
+    &.ng-valid~label,
+    &.ng-invalid.ng-dirty:not(form)~label,
+    &:focus~label {
+      left: 15px;
+    }
+  }
+}
+
+.app-button {
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 30px;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  outline: 0;
+  background-color: var(--app-theme-color);
+
+  &.button-secondary {
+    background-color: var(--app-green-color);
+  }
+
+  &.button-gradient-1 {
+    background-image: linear-gradient(to right, #2A3F54 0%, #159F85 100%);
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-image: none;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+
+input[uix-input],
+select[uix-input],
+textarea[uix-input] {
+  display: block;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  height: var(--uix-form-field-height);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #212121;
+  border: 1px solid #c1c1c1;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+  -webkit-appearance: none;
+
+  &~label,
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(#b4b4b4, 0.5);
+    transition: 0.2s ease all;
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &~label {
+    position: absolute;
+    pointer-events: none;
+    top: 12px;
+    left: 12px;
+    line-height: 1.3;
+  }
+
+  &:valid,
+  &:focus {
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid var(--app-green-color);
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &:not(:placeholder-shown):not(:focus)~label {
+    padding: 0 5px;
+    top: -6px;
+    left: 12px;
+    opacity: 1;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: var(--uix-block-strong-bg-color);
+  }
+
+  &:focus~label,
+  &.ng-valid~label,
+  &.ng-invalid.ng-dirty:not(form)~label,
+  &.ng-invalid:not(form).form-submitted~label {
+    padding: 0 5px;
+    top: -6px;
+    left: 12px;
+    opacity: 1;
+    font-size: 12px;
+    color: var(--app-green-color);
+    background-color: var(--uix-block-strong-bg-color);
+  }
+
+  &:invalid~label,
+  &.ng-invalid.ng-dirty:not(form)~label,
+  &.ng-invalid:not(form).form-submitted~label {
+    border-color: #f99f9f;
+  }
+}
+
+textarea[uix-input] {
+  resize: none;
+  padding: 12px;
+  min-height: 100px;
+}
+
+.uix-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  &.grid--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.grid--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &.grid--4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

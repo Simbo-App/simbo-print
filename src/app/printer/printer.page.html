@@ -1,0 +1,55 @@
+<uix-page>
+  <uix-navbar>
+    <uix-navbar-title>
+      <span>Simbo Printer Test</span>
+    </uix-navbar-title>
+    <uix-navbar-right></uix-navbar-right>
+  </uix-navbar>
+
+  <uix-page-content>
+    <div class="test-container">
+      <uix-block-title>Select Printer</uix-block-title>
+      <uix-block strong>
+        <uix-form-field field-dropdown>
+          <select uix-input id="btpPrinter" size="1" [disabled]="!device">
+            <option *ngIf="!device">-- No printer available --</option>
+            <option *ngIf="device" [value]="device[1]">{{ device[0] }}</option>
+          </select>
+          <label for="btpPrinter">Available Printers</label>
+        </uix-form-field>
+        <hr class="mg-t-15 mg-b-15" />
+        <uix-form-field>
+          <uix-button (click)="list()">list</uix-button>
+        </uix-form-field>
+        <div class="uix-grid grid--2 mg-t-20">
+          <uix-form-field>
+            <uix-button (click)="connect()">connect</uix-button>
+          </uix-form-field>
+          <uix-form-field>
+            <uix-button (click)="disconnect()">disconnect</uix-button>
+          </uix-form-field>
+        </div>
+        <div class="uix-grid grid--2 mg-t-20">
+          <uix-form-field>
+            <uix-button (click)="status()">status</uix-button>
+          </uix-form-field>
+          <uix-form-field>
+            <uix-button (click)="isConnected()">isConnected</uix-button>
+          </uix-form-field>
+        </div>
+        <hr class="mg-t-15 mg-b-15" />
+        <uix-form-field>
+          <uix-button (click)="reset()">Reset</uix-button>
+        </uix-form-field>
+      </uix-block>
+
+      <test-configs></test-configs>
+      <test-print-text [device]="device"></test-print-text>
+      <test-print-base64></test-print-base64>
+      <test-print-qrcode></test-print-qrcode>
+      <test-print-barcode></test-print-barcode>
+      <test-print-command></test-print-command>
+      <test-methods></test-methods>
+    </div>
+  </uix-page-content>
+</uix-page>

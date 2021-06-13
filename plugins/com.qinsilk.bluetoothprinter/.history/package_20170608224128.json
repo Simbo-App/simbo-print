@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-bluetoothprinter",
+  "version": "0.1.0",
+  "description": "bluetooth printer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynzz/cordova-plugin-bluetoothprinter.git"
+  },
+  "keywords": [
+    "bluetooth",
+    "printer"
+  ],
+  "author": "lynzz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lynzz/cordova-plugin-bluetoothprinter/issues"
+  },
+  "homepage": "https://github.com/lynzz/cordova-plugin-bluetoothprinter#readme"
+}

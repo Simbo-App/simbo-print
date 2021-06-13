@@ -1,0 +1,27 @@
+:root {
+  --app-theme-color: #2A3F54;
+  --app-theme-dark-color: rgb(35, 55, 75);
+  --app-theme-light-color: rgb(52, 77, 102);
+  --app-theme-secondary-color: #F7F7F7;
+
+  --app-green-color: #159F85;
+  --app-blue-color: #019ec1;
+  --app-yellow-color: #FFC400;
+  --app-red-color: #C90035;
+  --app-orange-color: #FF5627;
+
+  --app-theme-color-rgb: 42, 63, 84;
+  --app-green-color-rgb: 21, 159, 134;
+  --app-blue-color-rgb: 1, 158, 193;
+  --app-yellow-color-rgb: 255, 196, 0;
+  --app-red-color-rgb: 201, 0, 54;
+  --app-orange-color-rgb: 255, 86, 39;
+
+  --app-default-margin: 16px;
+
+  --app-modal-zindex: 9000;
+  --app-popup-zindex: 500;
+
+  --uix-form-field-height: 40px;
+  --uix-button-height: var(--uix-form-field-height);
+}
